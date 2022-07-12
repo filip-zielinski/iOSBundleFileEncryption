@@ -1,22 +1,22 @@
 //
-//  AppCryptor.swift
+//  AppCrypter.swift
 //  BundleFileEncryption
 //
 
 import Foundation
 import CryptoSwift
 
-protocol Decryptor {
+protocol Decrypter {
 
-    func decrypt(data: Data) throws -> Data?
+    func decrypt(data: Data) throws -> Data
 }
 
-protocol Encryptor {
+protocol Encrypter {
 
-    func encrypt(data: Data) throws -> Data?
+    func encrypt(data: Data) throws -> Data
 }
 
-final class AppCryptor {
+final class AppCrypter {
 
     let secretsProvider: SecretsProvider
 
@@ -25,10 +25,9 @@ final class AppCryptor {
     }
 }
 
-extension AppCryptor: Decryptor {
+extension AppCrypter: Decrypter {
 
-    func decrypt(data: Data) throws -> Data? {
-
+    func decrypt(data: Data) throws -> Data {
         let key = secretsProvider.key
         let iv = secretsProvider.iv
 
@@ -39,10 +38,9 @@ extension AppCryptor: Decryptor {
     }
 }
 
-extension AppCryptor: Encryptor {
+extension AppCrypter: Encrypter {
 
-    func encrypt(data: Data) throws -> Data? {
-
+    func encrypt(data: Data) throws -> Data {
         let key = secretsProvider.key
         let iv = secretsProvider.iv
 
@@ -53,9 +51,9 @@ extension AppCryptor: Encryptor {
     }
 }
 
-private extension AppCryptor {
+private extension AppCrypter {
 
-    func decrypt(data: Data, key: Array<UInt8>, iv: Array<UInt8>) throws -> Data? {
+    func decrypt(data: Data, key: Array<UInt8>, iv: Array<UInt8>) throws -> Data {
         let aes = try AES(key: key, blockMode: CBC(iv: iv), padding: .pkcs7)
 
         let decryptedBytes = try aes.decrypt(data.bytes)
@@ -64,7 +62,7 @@ private extension AppCryptor {
         return decryptedData
     }
 
-    func encrypt(data: Data, key: Array<UInt8>, iv: Array<UInt8>) throws -> Data? {
+    func encrypt(data: Data, key: Array<UInt8>, iv: Array<UInt8>) throws -> Data {
         let aes = try AES(key: key, blockMode: CBC(iv: iv), padding: .pkcs7)
 
         let encryptedBytes = try aes.encrypt(data.bytes)

@@ -13,17 +13,13 @@
 		4B33FC71287C7E9100D0EBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B33FC70287C7E9100D0EBAA /* Assets.xcassets */; };
 		4B33FC74287C7E9100D0EBAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B33FC73287C7E9100D0EBAA /* Preview Assets.xcassets */; };
 		4B33FC7E287C7E9100D0EBAA /* BundleFileEncryptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FC7D287C7E9100D0EBAA /* BundleFileEncryptionTests.swift */; };
-		4B33FC88287C7E9100D0EBAA /* BundleFileEncryptionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FC87287C7E9100D0EBAA /* BundleFileEncryptionUITests.swift */; };
-		4B33FC8A287C7E9100D0EBAA /* BundleFileEncryptionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FC89287C7E9100D0EBAA /* BundleFileEncryptionUITestsLaunchTests.swift */; };
-		4B33FC9B287C849A00D0EBAA /* AppCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FC9A287C849A00D0EBAA /* AppCryptor.swift */; };
+		4B33FC9B287C849A00D0EBAA /* AppCrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FC9A287C849A00D0EBAA /* AppCrypter.swift */; };
 		4B33FC9E287C872200D0EBAA /* MyFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FC9D287C872200D0EBAA /* MyFileModel.swift */; };
-		4B33FCA3287C94D300D0EBAA /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 4B33FCA2287C94D300D0EBAA /* Gemfile */; };
-		4B33FCA5287C95AB00D0EBAA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4B33FCA4287C95AB00D0EBAA /* Podfile */; };
-		4B33FCA8287D6B3100D0EBAA /* EncryptedPlistDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FCA7287D6B3100D0EBAA /* EncryptedPlistDecoder.swift */; };
+		4B33FCA8287D6B3100D0EBAA /* PlistDecrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FCA7287D6B3100D0EBAA /* PlistDecrypter.swift */; };
 		4B33FCAA287D6D2C00D0EBAA /* SecretsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FCA9287D6D2C00D0EBAA /* SecretsProvider.swift */; };
-		4B33FCAC287D6F1E00D0EBAA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4B33FCAB287D6F1E00D0EBAA /* .gitignore */; };
-		4B33FCAE287D708600D0EBAA /* .env.sample in Resources */ = {isa = PBXBuildFile; fileRef = 4B33FCAD287D708600D0EBAA /* .env.sample */; };
-		4B33FCB0287D708C00D0EBAA /* .env in Resources */ = {isa = PBXBuildFile; fileRef = 4B33FCAF287D708C00D0EBAA /* .env */; };
+		4B33FCB4287F0B2200D0EBAA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FCB3287F0B2200D0EBAA /* ContentViewModel.swift */; };
+		4B33FCB6287F10C600D0EBAA /* PlistEncrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FCB5287F10C600D0EBAA /* PlistEncrypter.swift */; };
+		4B33FCB9287F110A00D0EBAA /* AppFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FCB8287F110A00D0EBAA /* AppFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,20 +48,21 @@
 		4B33FC79287C7E9100D0EBAA /* BundleFileEncryptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BundleFileEncryptionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B33FC7D287C7E9100D0EBAA /* BundleFileEncryptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleFileEncryptionTests.swift; sourceTree = "<group>"; };
 		4B33FC83287C7E9100D0EBAA /* BundleFileEncryptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BundleFileEncryptionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B33FC87287C7E9100D0EBAA /* BundleFileEncryptionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleFileEncryptionUITests.swift; sourceTree = "<group>"; };
-		4B33FC89287C7E9100D0EBAA /* BundleFileEncryptionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleFileEncryptionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4B33FC96287C7EBB00D0EBAA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		4B33FC98287C7F4E00D0EBAA /* MyFile.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MyFile.plist; sourceTree = "<group>"; };
-		4B33FC9A287C849A00D0EBAA /* AppCryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCryptor.swift; sourceTree = "<group>"; };
+		4B33FC9A287C849A00D0EBAA /* AppCrypter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCrypter.swift; sourceTree = "<group>"; };
 		4B33FC9D287C872200D0EBAA /* MyFileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFileModel.swift; sourceTree = "<group>"; };
 		4B33FCA2287C94D300D0EBAA /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		4B33FCA4287C95AB00D0EBAA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4B33FCA6287D4D2B00D0EBAA /* BundleFileEncryptionLab.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BundleFileEncryptionLab.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		4B33FCA7287D6B3100D0EBAA /* EncryptedPlistDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptedPlistDecoder.swift; sourceTree = "<group>"; };
+		4B33FCA7287D6B3100D0EBAA /* PlistDecrypter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistDecrypter.swift; sourceTree = "<group>"; };
 		4B33FCA9287D6D2C00D0EBAA /* SecretsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsProvider.swift; sourceTree = "<group>"; };
 		4B33FCAB287D6F1E00D0EBAA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4B33FCAD287D708600D0EBAA /* .env.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.sample; sourceTree = "<group>"; };
 		4B33FCAF287D708C00D0EBAA /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
+		4B33FCB3287F0B2200D0EBAA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		4B33FCB5287F10C600D0EBAA /* PlistEncrypter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistEncrypter.swift; sourceTree = "<group>"; };
+		4B33FCB8287F110A00D0EBAA /* AppFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFileManager.swift; sourceTree = "<group>"; };
 		72B57A43899057526AD3C62C /* Pods_BundleFileEncryption.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BundleFileEncryption.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76FD07FF7CFF26D6E3608FF /* Pods-BundleFileEncryption.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BundleFileEncryption.release.xcconfig"; path = "Target Support Files/Pods-BundleFileEncryption/Pods-BundleFileEncryption.release.xcconfig"; sourceTree = "<group>"; };
 		FD2BD62F325352F277C3124F /* Pods-BundleFileEncryption.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BundleFileEncryption.debug.xcconfig"; path = "Target Support Files/Pods-BundleFileEncryption/Pods-BundleFileEncryption.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,7 +107,6 @@
 			children = (
 				4B33FC6B287C7E8F00D0EBAA /* BundleFileEncryption */,
 				4B33FC7C287C7E9100D0EBAA /* BundleFileEncryptionTests */,
-				4B33FC86287C7E9100D0EBAA /* BundleFileEncryptionUITests */,
 				4B33FC96287C7EBB00D0EBAA /* README.md */,
 				4B33FCA2287C94D300D0EBAA /* Gemfile */,
 				4B33FCA4287C95AB00D0EBAA /* Podfile */,
@@ -138,10 +134,12 @@
 			children = (
 				4B33FC9C287C870F00D0EBAA /* Models */,
 				4B33FC99287C848A00D0EBAA /* Crypter */,
+				4B33FCB7287F10EE00D0EBAA /* FilieManager */,
 				4B33FCB1287D73FB00D0EBAA /* Plist */,
 				4B33FC97287C7F3A00D0EBAA /* Resources */,
 				4B33FC6C287C7E8F00D0EBAA /* BundleFileEncryptionApp.swift */,
 				4B33FC6E287C7E8F00D0EBAA /* ContentView.swift */,
+				4B33FCB3287F0B2200D0EBAA /* ContentViewModel.swift */,
 				4B33FC70287C7E9100D0EBAA /* Assets.xcassets */,
 				4B33FCA6287D4D2B00D0EBAA /* BundleFileEncryptionLab.playground */,
 				4B33FC72287C7E9100D0EBAA /* Preview Content */,
@@ -165,15 +163,6 @@
 			path = BundleFileEncryptionTests;
 			sourceTree = "<group>";
 		};
-		4B33FC86287C7E9100D0EBAA /* BundleFileEncryptionUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4B33FC87287C7E9100D0EBAA /* BundleFileEncryptionUITests.swift */,
-				4B33FC89287C7E9100D0EBAA /* BundleFileEncryptionUITestsLaunchTests.swift */,
-			);
-			path = BundleFileEncryptionUITests;
-			sourceTree = "<group>";
-		};
 		4B33FC97287C7F3A00D0EBAA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +175,7 @@
 		4B33FC99287C848A00D0EBAA /* Crypter */ = {
 			isa = PBXGroup;
 			children = (
-				4B33FC9A287C849A00D0EBAA /* AppCryptor.swift */,
+				4B33FC9A287C849A00D0EBAA /* AppCrypter.swift */,
 			);
 			path = Crypter;
 			sourceTree = "<group>";
@@ -202,9 +191,18 @@
 		4B33FCB1287D73FB00D0EBAA /* Plist */ = {
 			isa = PBXGroup;
 			children = (
-				4B33FCA7287D6B3100D0EBAA /* EncryptedPlistDecoder.swift */,
+				4B33FCA7287D6B3100D0EBAA /* PlistDecrypter.swift */,
+				4B33FCB5287F10C600D0EBAA /* PlistEncrypter.swift */,
 			);
 			path = Plist;
+			sourceTree = "<group>";
+		};
+		4B33FCB7287F10EE00D0EBAA /* FilieManager */ = {
+			isa = PBXGroup;
+			children = (
+				4B33FCB8287F110A00D0EBAA /* AppFileManager.swift */,
+			);
+			path = FilieManager;
 			sourceTree = "<group>";
 		};
 		E3292285B8A10DB3DCDE6745 /* Pods */ = {
@@ -323,12 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B33FCAC287D6F1E00D0EBAA /* .gitignore in Resources */,
-				4B33FCA3287C94D300D0EBAA /* Gemfile in Resources */,
-				4B33FCB0287D708C00D0EBAA /* .env in Resources */,
 				4B33FC74287C7E9100D0EBAA /* Preview Assets.xcassets in Resources */,
-				4B33FCA5287C95AB00D0EBAA /* Podfile in Resources */,
-				4B33FCAE287D708600D0EBAA /* .env.sample in Resources */,
 				4B33FC71287C7E9100D0EBAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ENV_FILE='.env'\nexport $(grep -v '^#' $ENV_FILE | xargs)\n\nkey=$AppCryptor_key\niv=$MyFile_iv\n\necho key\necho $key\necho iv\necho $iv\n\nopenssl enc -e -aes-256-cbc -K $key -iv $iv -in $PROJECT_DIR/BundleFileEncryption/Resources/MyFile.plist -out $TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/MyFile.encplist\n";
+			shellScript = "# Encrypts given file and puts it in app bundle.\n\n# configuration:\ninput=\"BundleFileEncryption/Resources/MyFile.plist\"\noutput=\"MyFile.plist.enc\"\n\n# get secrets from .env file and export them to environment variables:\nENV_FILE=\".env\"\nexport $(grep -v \"^#\" $ENV_FILE | xargs)\n\nkey=$AppCrypter_key\niv=$MyFile_iv\n\n# encrypt file and put it in app bundle:\nopenssl enc -e -aes-256-cbc -K $key -iv $iv -in $PROJECT_DIR/$input -out $TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/$output\n";
 		};
 		AB2584B47073255CC5B6CC85 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -415,10 +408,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B33FCAA287D6D2C00D0EBAA /* SecretsProvider.swift in Sources */,
+				4B33FCB9287F110A00D0EBAA /* AppFileManager.swift in Sources */,
+				4B33FCB6287F10C600D0EBAA /* PlistEncrypter.swift in Sources */,
 				4B33FC6F287C7E8F00D0EBAA /* ContentView.swift in Sources */,
-				4B33FC9B287C849A00D0EBAA /* AppCryptor.swift in Sources */,
+				4B33FC9B287C849A00D0EBAA /* AppCrypter.swift in Sources */,
+				4B33FCB4287F0B2200D0EBAA /* ContentViewModel.swift in Sources */,
 				4B33FC6D287C7E8F00D0EBAA /* BundleFileEncryptionApp.swift in Sources */,
-				4B33FCA8287D6B3100D0EBAA /* EncryptedPlistDecoder.swift in Sources */,
+				4B33FCA8287D6B3100D0EBAA /* PlistDecrypter.swift in Sources */,
 				4B33FC9E287C872200D0EBAA /* MyFileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,8 +431,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B33FC88287C7E9100D0EBAA /* BundleFileEncryptionUITests.swift in Sources */,
-				4B33FC8A287C7E9100D0EBAA /* BundleFileEncryptionUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

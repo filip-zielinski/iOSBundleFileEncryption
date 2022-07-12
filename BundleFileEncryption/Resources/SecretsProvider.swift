@@ -22,11 +22,12 @@ final class AppSecretsProvider: SecretsProvider {
         self.keys = keys
     }
 
+    /// Symmetric encryption key.
     var key: String {
-        keys.appCryptor_key
+        keys.appCrypter_key
     }
 
-    /// initialization vector
+    /// Initialization vector.
     var iv: String {
         keys.myFile_iv
     }

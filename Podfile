@@ -11,6 +11,6 @@ end
 plugin 'cocoapods-keys', {
   :project => "BundleFileEncryption",
   :keys => [
-    "AppCryptor_key",
+    "AppCrypter_key",
     "MyFile_iv",
   ]}
